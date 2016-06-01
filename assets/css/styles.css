@@ -303,6 +303,10 @@ hr {
   width: 200px;
 }
 
+#sponsors .learn-more-btn {
+  width: 220px;
+}
+
 .align-center {
   margin: 0 auto;
   overflow: hidden;
