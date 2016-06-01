@@ -72,76 +72,8 @@ jQuery(document).ready(function ($) {
     }
   });
 
-  /* 3D Gallery */
-  new CBPGridGallery(document.getElementById('grid-gallery'));
-  new CBPFWTabs(document.getElementById('tabs-ui'));
-
-  /* Vimeo Video */
-  $('.venobox').venobox({
-    numeratio: true,
-    infinigall: true,
-    border: '20px'
-  });
-  $('.venoboxvid').venobox({
-    bgcolor: '#000'
-  });
-  $('.venoboxframe').venobox({
-    border: '6px'
-  });
-  $('.venoboxinline').venobox({
-    framewidth: '300px',
-    frameheight: '250px',
-    border: '6px',
-    bgcolor: '#f46f00'
-  });
-  $('.venoboxajax').venobox({
-    border: '30px;',
-    frameheight: '220px'
-  });
-
-  /* Schedule Accordion */
-  $('.accordion .item .heading').click(function () {
-    var a = $(this).closest('.item');
-    var b = $(a).hasClass('open');
-    var c = $(a).closest('.accordion').find('.open');
-
-    if (b != true) {
-      $(c).find('.content').slideUp(500);
-      $(c).removeClass('open');
-    }
-
-    $(a).toggleClass('open');
-    $(a).find('.content').slideToggle(500);
-
-  });
-
   $('.nav_slide_button').click(function () {
     $('.pull').slideToggle();
-  });
-
-  /* Speakers Slider */
-  // LOAD MORE
-  $('#list-speaker li:lt(4)').show();
-
-  $('#loadmore').on("click", function () {
-    $('#list-speaker li:lt(8)').fadeIn(1000);
-    $('#list-speaker li:lt(8)').show();
-  });
-
-  $('#servicesSlider').flexslider({
-    animation: "slide",
-    directionNav: false,
-    controlNav: true,
-    touch: true,
-    pauseOnHover: true
-  });
-
-  $('#teamSlider').flexslider({
-    animation: "slide",
-    directionNav: false,
-    controlNav: true,
-    touch: true,
-    pauseOnHover: true
   });
 
   /* Overlay */
@@ -198,8 +130,5 @@ jQuery(document).ready(function ($) {
 
   /* Nice Scroll */
   $("html").niceScroll();
-
-  /* Placeholder JS call */
-  $('input[type=text], textarea').placeholder();
 
 });

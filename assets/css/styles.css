@@ -192,7 +192,7 @@ hr {
   animation-iteration-count: infinite;
   animation-direction: normal;
   animation-fill-mode: none;
-  background: url('https://farm9.staticflickr.com/8648/15823717044_1b941964e0_b.jpg') no-repeat center center;
+  background: url('../img/backgrounds/home-bg.jpg') no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -301,6 +301,10 @@ hr {
   padding: 15px;
   text-transform: uppercase;
   width: 200px;
+}
+
+#sponsors .learn-more-btn {
+  width: 220px;
 }
 
 .align-center {
